@@ -40,5 +40,11 @@ export default defineType({
       title: 'Phone',
       type: 'string',
     }),
+
+    defineField({
+      name: 'resume',
+      title: 'cv/resume',
+      type: 'file',
+    }),
   ],
 })
