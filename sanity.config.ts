@@ -8,7 +8,7 @@ export default defineConfig({
   name: 'default',
   title: 'azcreation-cms',
 
-  projectId: 'uhk70a7q',
+  projectId: 'xaruh7b3',
   dataset: 'production',
 
   plugins: [
