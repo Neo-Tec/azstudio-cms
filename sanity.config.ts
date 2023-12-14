@@ -1,8 +1,8 @@
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
-import {structure} from './src/structure'
+import {schemaTypes, singeletonSchemas} from './schemas'
+import {createSingeletonStructure} from './src/structure'
 
 export default defineConfig({
   name: 'default',
@@ -13,7 +13,7 @@ export default defineConfig({
 
   plugins: [
     deskTool({
-      structure,
+      structure: createSingeletonStructure(singeletonSchemas),
     }),
     visionTool(),
     //googleMapsInput(),

@@ -7,6 +7,7 @@ import screening from './screening'
 import plotSummary from './plotSummary'
 import plotSummaries from './plotSummaries'
 import aboutMe from './aboutMe'
+import socialMedia from './socialMedia'
 
 export const schemaTypes = [
   // Document types
@@ -14,6 +15,7 @@ export const schemaTypes = [
   person,
   screening,
   aboutMe,
+  socialMedia,
 
   // Other types
   blockContent,
@@ -22,3 +24,5 @@ export const schemaTypes = [
   castMember,
   crewMember,
 ]
+
+export const singeletonSchemas = [aboutMe, socialMedia]

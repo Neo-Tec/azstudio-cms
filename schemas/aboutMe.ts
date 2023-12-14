@@ -11,9 +11,14 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'string',
+    }),
+    defineField({
       name: 'date_of_birth',
       title: 'Date of Birth',
-      type: 'datetime',
+      type: 'string',
     }),
     defineField({
       name: 'address',
